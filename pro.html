@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+a:active {
+  background: green;
+}
+a {
+ display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border: solid 1px #da7c0c;
+    background: #478dad;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: .5em 2em .55em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .5em; 
+    -moz-border-radius: .5em;
+    border-radius: .3em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.a .active {
+  background-color: green;
+}
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+.tablink:active {
+  background-color: green;
+}
+.tablink:hover {
+  background-color: #777;
+}
+#View Products {background-color: red;}
+#Update Products {background-color: green;}
+#Delete Product {background-color: blue;}
+#Add Products {background-color: orange;}
+</style>
+</head>
+<body>
+<a href="vpro.php" target="if" class="tablink" >View Products</a>
+
+<a href="Update.html" target="if" class="tablink" >Update Products</a>
+
+<a href="deletee.html" target="if" class="tablink" >Delete Product</a>
+
+<a href="add.php" target="if" class="tablink" >Add Products</a>
+
+<iframe width="1500" height="1000" name="if" src="pr.jpg">
+<script>
+    currentLinks = document.querySelectorAll('a[href="'+document.URL+'"]')
+    currentLinks.forE??ach(function(link) {
+        link.className += ' current-link')
+    });
+</script>
+</iframe>
+</body>
+</html>

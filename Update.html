@@ -1,0 +1,99 @@
+<html>
+<head>
+<style>
+
+input[type=text], select {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 60%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #073e00;
+}
+input[type=reset] {
+  width: 60%;
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #073e00;
+}
+.espace {
+  padding: 10px;
+
+  padding-left: 0px;
+}
+
+</style>
+</head><body background="p.jpg">
+  <form method="post" action="Update.php"><center><br><br>
+<table class="table">
+              <h4><label style="color: rgb(96, 101, 95); font-size: 30px;">"Make changes in your product"</label></h4>
+              <input type="text" name="pid" placeholder="ID" required style="
+                     
+                        padding: 12px 12px;
+                        margin: 0px 0px;
+                        display: inline-block;
+                        border-radius: 40px;
+                        box-sizing: border-box;" value=""><br>
+
+         <input type="text" placeholder="New name" name="pname" required style="
+                      
+                        padding: 12px 12px;
+                        margin: 0px 0px;
+                        display: inline-block;
+                        border-radius: 40px;
+                        box-sizing: border-box;" value=""><br>
+          <input type="text" placeholder="New price" name="price" required style="
+                      
+                        padding: 12px 12px;
+                        margin: 0px 0px;
+                        display: inline-block;
+                        border-radius: 40px;
+                        box-sizing: border-box;" value=""><br>
+
+          <input type="text" placeholder="New description" name="descr" required style="
+                    
+                        padding: 12px 12px;
+                        margin: 0px 0px;
+                        display: inline-block;
+                        border-radius: 40px;
+                        box-sizing: border-box;" value=""><br>
+
+          <input type="text" name="stock" placeholder="New Stock" required style="
+               
+                        padding: 12px 12px;
+                        margin: 0px 0px;
+                        display: inline-block;
+                        border-radius: 40px;
+                        box-sizing: border-box;" value=""><br>
+<input type="file" id="myFile" size="50" name="image">
+<br><br>
+              <input type="submit"  name="update" value="Update Product"><br>
+	<input type="reset" value="cancel"></center>
+
+   
+</table>	
+</center>
+        </div></form>
